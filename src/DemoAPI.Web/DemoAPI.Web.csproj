@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3361e8ff-0a8b-45c6-b922-41495f8966c0</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.ListStartupServices" Version="1.1.4" />
+    <PackageReference Include="FastEndpoints" Version="5.10.0" />
+    <PackageReference Include="FastEndpoints.ApiExplorer" Version="2.0.1" />
+    <PackageReference Include="FastEndpoints.Swagger.Swashbuckle" Version="2.0.1" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoAPI.Core\DemoAPI.Core.csproj" />
+    <ProjectReference Include="..\DemoAPI.Infrastructure\DemoAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\DemoAPI.SharedKernel\DemoAPI.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>
